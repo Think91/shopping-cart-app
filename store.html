@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Gadget Bar</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="checkout.html">CHECKOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">The Gadget Bar</h1>
+        </header>
+        <button onclick="myFunction()">Toggle Images</button>
+        <div id="myDIV">
+        <section class="container content-section">
+            <h2 class="section-header">Gadgets</h2>
+            
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Fit Watch</span>
+                    <img class="shop-item-image" src="Images/Fit Watch.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R19</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Lenovo Laptop</span>
+                    <img class="shop-item-image" src="Images/PC.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R50</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Xbox 4</span>
+                    <img class="shop-item-image" src="Images/Xbox.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">USB</span>
+                    <img class="shop-item-image" src="Images/USB.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Home Appliances</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Pizza Oven</span>
+                    <img class="shop-item-image" src="Images/Pizza Oven.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R6</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Microwave</span>
+                    <img class="shop-item-image" src="Images/Microwave.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R89</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                	<span class="shop-item-title">Gas Stove</span>
+                    <img class="shop-item-image" src="Images/Gas stove.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R10</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                    <div class="shop-item">
+                    <span class="shop-item-title">Stainless Steel Iron</span>
+                    <img class="shop-item-image" src="Images/Gas-iron.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">R15</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </div>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">R0</span>
+            </div>
+
+            <button class="btn btn-primary btn-purchase" type="button"><a href="checkout.html">PURCHASE</a></button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Gadget Bar</h3>
+                
+            </div>
+        </footer>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+};
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="JS.js"></script>
+    </body>
+</html>

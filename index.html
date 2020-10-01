@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Gadget Bar</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="checkout.html">CHECKOUT</a></li>
+                </ul>
+            </nav>
+            <h4 class="band-name band-name-large">Welcome To The Gadget Bar...</h4>
+        </header>
+        <section class="content-section container">
+
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Items on sale!!
+                </button>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item-text">Fit Watch</a>
+                    <a class="dropdown-item-text">USB</a>
+                    <a class="dropdown-item-text">Xbox 4</a>
+                    <span class="dropdown-item-text">Lenovo Laptop</span>
+                    <a class="dropdown-item-text">Laptoop Speakers</a>
+                    <a class="dropdown-item-text">Hair Dryer</a>
+                    <a class="dropdown-item-text">Pizza Oven</a>
+                    <span class="dropdown-item-text">Gas Stove</span>
+                    <span class="dropdown-item-text">Stainless Steel Iron</span>
+                </div>
+            </div>
+            <div class="boxes">
+            	<div class="box1">
+            		<h5>Online Shopping</h5>
+				</div><BR>
+				<h6>OR</h6><BR>
+				<div class="box2">
+					<h5>Physical Shopping</h5>
+				</div>
+			</div>
+                    
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Gadget Bar</h3>
+                
+            </div>
+        </footer>
+
+        <script>
+
+
+//This creates a chained effect to slide all elements on the page repeatedly whislt changing the background.//
+$(document).ready(function() {
+    setInterval(animateBoxes, 4000);
+    setInterval(changecolors, 2000);
+    function animateBoxes() {
+        $(".boxes").animate({right: '500px'}, 1000).animate({left: '500px'}, 1000);
+        $(".boxes").slideUp(2000).slideDown(2000);
+    }
+    animateBoxes();
+    var counter = 0;
+    function changecolors() {
+        var colors = ["azure", "lavender", "Lightcyan", "Grainsboro"];
+        if (counter < colors.length) {
+            $("body").css("background-color", colors[counter], 1000);
+            console.log("Counter: " + counter + " Colors Length: " + colors.length)
+            counter++;
+        } else {
+            counter = 0;
+        }
+        console.log(colors.length);
+    }
+    changecolors();
+});
+
+
+
+ </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
